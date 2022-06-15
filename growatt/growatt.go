@@ -56,7 +56,7 @@ func Login(user string, passwd string) string {
 		"password": {hex.EncodeToString(h.Sum(nil))},
 	}
 
-	response, err := http.PostForm("https://server-api.growatt.com/newLoginAPI.do", data)
+	response, err := http.PostForm("https://server-api.growatt.com/newTwoLoginAPI.do", data)
 
 	responseData, err := ioutil.ReadAll(response.Body)
 
