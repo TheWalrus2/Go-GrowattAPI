@@ -102,7 +102,7 @@ func Tlxdetail(tlx_id string) string {
 		Timeout:       0,
 	}
 	logindata := getloginurl()
-	resp, _ := client.PostForm("https://server-api.growatt.com/newLoginAPI.do", logindata)
+	resp, _ := client.PostForm("https://server-api.growatt.com/newTwoLoginAPI.do", logindata)
 	resp.Body.Close()
 
 	url := gettlxdetailurlcall(tlx_id)
